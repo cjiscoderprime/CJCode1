@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>My first app</title>
+</head>
+<body style="background-color:lightblue;">
+<center>
+<h1 id="msg" style="font-size:100px; color:white"></h1>
+<script>
+let msg = document.getElementById("msg");
+let d = new Date();
+let hr = d.getHours();
+let rep = "";
+if (hr < 12)         rep = "good morning";
+else if (hr < 16)    rep = "good afternoon";
+else                 rep = "good evening";
+msg.innerHTML=rep;
+</script>
+</center>
+</body>
+
+
+</html>
